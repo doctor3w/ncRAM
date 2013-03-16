@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD918792153F34B800F38DAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD918791153F34B800F38DAF /* Foundation.framework */; };
+		FD918794153F34B800F38DAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD918793153F34B800F38DAF /* UIKit.framework */; };
+		FD91879F153F34B900F38DAF /* ncRAMController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91879E153F34B900F38DAF /* ncRAMController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD91878E153F34B800F38DAF /* ncRAM */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = ncRAM; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD918791153F34B800F38DAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD918793153F34B800F38DAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD918798153F34B800F38DAF /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		FD918799153F34B800F38DAF /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		FD91879B153F34B800F38DAF /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		FD91879C153F34B800F38DAF /* ncRAM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ncRAM-Prefix.pch"; sourceTree = "<group>"; };
+		FD91879D153F34B900F38DAF /* ncRAMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ncRAMController.h; sourceTree = "<group>"; };
+		FD91879E153F34B900F38DAF /* ncRAMController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ncRAMController.m; sourceTree = "<group>"; };
+		FD9187A4153F34B900F38DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/ncRAM.bundle/Info.plist; sourceTree = "<group>"; };
+		FD9187A5153F34B900F38DAF /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/ncRAM.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		FD9187A6153F34B900F38DAF /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/ncRAM.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		FD9187A7153F34B900F38DAF /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/ncRAM.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+		FD9187B0153F50A300F38DAF /* ncRAM.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ncRAM.plist; sourceTree = "<group>"; };
+		FD9187B1153F663A00F38DAF /* ncRAM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ncRAM.png; sourceTree = "<group>"; };
+		FD9187B2153F663A00F38DAF /* ncRAM@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ncRAM@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD91878A153F34B800F38DAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD918792153F34B800F38DAF /* Foundation.framework in Frameworks */,
+				FD918794153F34B800F38DAF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD918782153F34B800F38DAF = {
+			isa = PBXGroup;
+			children = (
+				FD918795153F34B800F38DAF /* ncRAM */,
+				FD918790153F34B800F38DAF /* Frameworks */,
+				FD91878F153F34B800F38DAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD91878F153F34B800F38DAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD91878E153F34B800F38DAF /* ncRAM */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD918790153F34B800F38DAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD918791153F34B800F38DAF /* Foundation.framework */,
+				FD918793153F34B800F38DAF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD918795153F34B800F38DAF /* ncRAM */ = {
+			isa = PBXGroup;
+			children = (
+				FD91879D153F34B900F38DAF /* ncRAMController.h */,
+				FD91879E153F34B900F38DAF /* ncRAMController.m */,
+				FD918796153F34B800F38DAF /* Package */,
+				FD91879A153F34B800F38DAF /* Supporting Files */,
+			);
+			path = ncRAM;
+			sourceTree = "<group>";
+		};
+		FD918796153F34B800F38DAF /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				FD9187AD153F50A300F38DAF /* Library */,
+				FD918797153F34B800F38DAF /* DEBIAN */,
+				FD9187A0153F34B900F38DAF /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		FD918797153F34B800F38DAF /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				FD918798153F34B800F38DAF /* control.txt */,
+				FD918799153F34B800F38DAF /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		FD91879A153F34B800F38DAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD91879B153F34B800F38DAF /* PackageVersion.plist */,
+				FD91879C153F34B800F38DAF /* ncRAM-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD9187A0153F34B900F38DAF /* System */ = {
+			isa = PBXGroup;
+			children = (
+				FD9187A1153F34B900F38DAF /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		FD9187A1153F34B900F38DAF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FD9187A2153F34B900F38DAF /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		FD9187A2153F34B900F38DAF /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				FD9187A3153F34B900F38DAF /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		FD9187A3153F34B900F38DAF /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				FD9187A4153F34B900F38DAF /* Info.plist */,
+				FD9187A5153F34B900F38DAF /* InfoPlist.strings */,
+				FD9187A6153F34B900F38DAF /* WeeAppBackground@2x.png */,
+				FD9187A7153F34B900F38DAF /* WeeAppBackground.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+		FD9187AD153F50A300F38DAF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FD9187AE153F50A300F38DAF /* PreferenceLoader */,
+			);
+			name = Library;
+			path = Package/Library;
+			sourceTree = "<group>";
+		};
+		FD9187AE153F50A300F38DAF /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				FD9187AF153F50A300F38DAF /* Preferences */,
+			);
+			path = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		FD9187AF153F50A300F38DAF /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				FD9187B0153F50A300F38DAF /* ncRAM.plist */,
+				FD9187B1153F663A00F38DAF /* ncRAM.png */,
+				FD9187B2153F663A00F38DAF /* ncRAM@2x.png */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FD91878B153F34B800F38DAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FD91878D153F34B800F38DAF /* ncRAM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD9187AA153F34B900F38DAF /* Build configuration list for PBXNativeTarget "ncRAM" */;
+			buildPhases = (
+				FD918789153F34B800F38DAF /* Sources */,
+				FD91878A153F34B800F38DAF /* Frameworks */,
+				FD91878B153F34B800F38DAF /* Headers */,
+				FD91878C153F34B800F38DAF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ncRAM;
+			productName = ncRAM;
+			productReference = FD91878E153F34B800F38DAF /* ncRAM */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD918784153F34B800F38DAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = FD918787153F34B800F38DAF /* Build configuration list for PBXProject "ncRAM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD918782153F34B800F38DAF;
+			productRefGroup = FD91878F153F34B800F38DAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD91878D153F34B800F38DAF /* ncRAM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD91878C153F34B800F38DAF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD918789153F34B800F38DAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD91879F153F34B900F38DAF /* ncRAMController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FD9187A8153F34B900F38DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		FD9187A9153F34B900F38DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		FD9187AB153F34B900F38DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = ncRAM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ncRAM/ncRAM-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/ncRAM.bundle;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		FD9187AC153F34B900F38DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = ncRAM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ncRAM/ncRAM-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/ncRAM.bundle;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD918787153F34B800F38DAF /* Build configuration list for PBXProject "ncRAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9187A8153F34B900F38DAF /* Release */,
+				FD9187A9153F34B900F38DAF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD9187AA153F34B900F38DAF /* Build configuration list for PBXNativeTarget "ncRAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD9187AB153F34B900F38DAF /* Release */,
+				FD9187AC153F34B900F38DAF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD918784153F34B800F38DAF /* Project object */;
+}
